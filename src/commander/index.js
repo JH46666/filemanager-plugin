@@ -13,5 +13,5 @@ export default {
   zip,
   unzip,
   rename,
-  convert
+  convert,
 };

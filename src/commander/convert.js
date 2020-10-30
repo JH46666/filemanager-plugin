@@ -2,17 +2,14 @@ const fs = require('fs');
 const markdown = require('markdown').markdown;
 import { logger } from '../utils';
 
-
-const convert = ({
-  source,
-  destination
-}, options = {}) => {
+const convert = ({ source, destination }, options = {}) => {
   const { log: logType } = options;
 
   readFile(source)
     .then((mdStr) => {
       return markdown.toHTML(mdStr); // 返回的结果作为下个回调的参数
-    }).then(html => {
+    })
+    .then((html) => {
       try {
         writeFile(destination, html);
         logger
@@ -21,7 +18,8 @@ const convert = ({
       } catch (error) {
         logger.error(`copy error: ${error}`);
       }
-    }).catch((e) => {
+    })
+    .catch((e) => {
       console.log(e);
     });
 
