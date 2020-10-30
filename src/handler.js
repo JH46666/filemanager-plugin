@@ -1,7 +1,7 @@
 import masterCluster from './masterCluster';
 import commander from './commander';
 
-const COMMAND_LIST = ['copy', 'move', 'del', 'zip', 'unzip', 'rename'];
+const COMMAND_LIST = ['copy', 'move', 'del', 'zip', 'unzip', 'rename', 'convert'];
 /**
  * @description singleton mode
  * @returns {function}

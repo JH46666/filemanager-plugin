@@ -4,6 +4,7 @@ import del from './del';
 import zip from './zip';
 import unzip from './unzip';
 import rename from './rename';
+import convert from './convert';
 
 export default {
   copy,
@@ -12,4 +13,5 @@ export default {
   zip,
   unzip,
   rename,
+  convert
 };

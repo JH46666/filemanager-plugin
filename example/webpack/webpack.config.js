@@ -37,6 +37,11 @@ const config = {
         start: {
           del: {
             items: ['./dist']
+          },
+          convert: {
+            items: [
+              { source : './src/markdown/test.md', destination:'./dist/markdown/markdown.html' }
+            ]
           }
         },
         end: {
@@ -45,7 +50,7 @@ const config = {
               { source: './zip/a', destination: './dist/zip/a.tar', type: 'tar', options: {} },
               { source: './zip/b', destination: './dist/zip/b.zip', options: {} },
               { source: './zip/c', destination: './dist/zip/c.tgz', type: 'tgz', options: {} },
-              { source: './zip/b.html', destination: './dist/zip/b.gz', type: 'gzip', options: {} }
+              { source: './zip/b.html', destination: './dist/zip/b.gz', type: 'gzip', options: {} },
             ]
           },
           copy: {

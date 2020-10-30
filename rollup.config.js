@@ -22,7 +22,8 @@ export default {
     'fs-extra',
     'cluster',
     'cli-progress',
-    'compressing'],
+    'compressing',
+    'markdown'],
   watch: {
     include: 'src/**'
   },
